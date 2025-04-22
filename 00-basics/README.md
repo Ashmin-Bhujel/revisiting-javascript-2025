@@ -23,7 +23,7 @@
 
 - We can declare variables using either `var` or `let` keyword.
 
-  ### Using `var` keyword
+  ### Using `var` Keyword
 
   ```js
   var username = "John";
@@ -52,7 +52,7 @@
   // Output: 24
   ```
 
-  ### Using `let` keyword
+  ### Using `let` Keyword
 
   ```js
   let username = "Peter";
@@ -85,7 +85,7 @@
 
 - They have similar features like variables declared using `let` keyword except that they cannot be reassigned.
 
-  ### Using `const` keyword
+  ### Using `const` Keyword
 
   ```js
   const PI = 3.14159;
@@ -96,7 +96,7 @@
 
 ## Data Types
 
-### Primitives
+### Primitives [Pass by Value] [Stack Memory]
 
 - `number`
 - `string`
@@ -105,7 +105,7 @@
 - `null`
 - `bigint`
 
-  #### Usage and examples
+  #### Usage and Examples
 
   - `number`
 
@@ -177,3 +177,149 @@
     console.log(bigNumber, typeof bigNumber);
     // Output: 12345678910111213141516n bigint
     ```
+
+### Non-Primitives [Pass by Reference] [Heap Memory]
+
+**NOTE:** Everything except primitive data types are objects in `JavaScript`.
+
+- `object`
+- `array`
+- `function`
+
+  #### Usage and Examples
+
+  - `object`
+
+    ```js
+    // In an object the data is stored in key-value pair
+    const userInfo = {
+      name: "John Doe",
+      age: 26,
+      isLoggedIn: false,
+    };
+    ```
+
+  - `array`
+
+    ```js
+    // Array is a collection of related data
+    const marks = [78, 80, 64, 56];
+
+    /* In other programming language
+     * only the values with same data type
+     * can be stored in an array (Homogenous data)
+     * but in JavaScript we are allowed to have values
+     * with different data types (Heterogenous data)
+     */
+    const user = ["Jane Parker", 36, true];
+    ```
+
+  - `function`
+
+    ```js
+    // There are many ways to define a function
+    // Normal, Anonymous, Arrow, IIFE
+
+    // Normal function
+    function fn1() {
+      // Do something
+    }
+
+    // Anonymous function
+    const fn2 = function () {
+      // Do something
+    };
+
+    // Arrow function
+    const fn3 = () => {
+      // Do something
+    };
+
+    // IIFE (Immediately Invoked Function Expression)
+    (function () {
+      // Do something
+    })();
+
+    // OR
+    (() => {
+      // Do something
+    })();
+    ```
+
+## Data Type Conversions
+
+- To `number`
+
+  ```js
+  // Using type conversion function i.e. Number()
+  let a = "21";
+  let b = Number(a);
+  console.log(typeof b);
+  // Output: number
+
+  // Using '+' operator
+  let x = "123";
+  let y = +x;
+  console.log(typeof y);
+  // Output: number
+
+  // Some conversions to remember
+  // NOTE: Here "NaN" means not a number
+  // "" => 0
+  // "123abc" => NaN
+  // [] => 0
+  // {} => NaN
+  // null => 0
+  // undefined => NaN
+  // true => 1, false => 0
+  ```
+
+- To `string`
+
+  ```js
+  // Using type conversion function i.e. String()
+  let a = 123;
+  let b = String(a);
+  console.log(typeof b);
+  // Output: string
+
+  // By adding to an empty string
+  let x = 2025;
+  let y = x + "";
+  console.log(typeof y);
+  // Output: string
+
+  // Some conversion to remember
+  // [] => ""
+  // {} => [object Object] (string)
+  // null => "null" (string)
+  // undefined => "undefined" (string)
+  // true => "true", false => "false" (string)
+  ```
+
+- To `boolean`
+
+  ```js
+  // Using type conversion function i.e. Boolean()
+  let a = 1;
+  let b = Boolean(x);
+  console.log(typeof b);
+  // Output: boolean
+
+  // Using '!!' operator
+  let x = 123;
+  let y = !!x;
+  console.log(typeof y);
+  // Output: boolean
+
+  // Some conversion to remember
+  /* NOTE: Even though [] and {} are empty they are
+   * treated as truthy values in JavaScript
+   */
+  // [] => true
+  // {} => true
+  // 1 => true, 0 => false (Any number except 0 are treated as truthy value)
+  // "" => false, "123" => true (Empty strings are treated as falsy value)
+  // null => false
+  // undefined => false
+  ```
