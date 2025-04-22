@@ -4,4 +4,5 @@ Just refreshing on JavaScript concepts.
 
 - [x] Basic of JavaScript
 - [x] Operators in JavaScript
-- [ ] Stack and Heap Memory
+- [x] Stack and Heap Memory
+- [ ] Strings in JavaScript
