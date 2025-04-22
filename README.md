@@ -3,4 +3,5 @@
 Just refreshing on JavaScript concepts.
 
 - [x] Basic of JavaScript
-- [ ] Operators in JavaScript
+- [x] Operators in JavaScript
+- [ ] Stack and Heap Memory
