@@ -6,4 +6,5 @@ Just refreshing on JavaScript concepts.
 - [x] Operators in JavaScript
 - [x] Stack and Heap Memory
 - [x] Strings in JavaScript
-- [ ] Numbers in JavaScript
+- [x] Numbers in JavaScript
+- [ ] Date and Time
