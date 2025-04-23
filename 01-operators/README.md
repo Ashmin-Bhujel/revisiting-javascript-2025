@@ -99,7 +99,7 @@ console.log("2" === 2); // true
 
 ## Comparison Operators
 
-They returns `true` or `false` based upon the comparison
+They return `true` or `false` based upon the comparison
 
 ```js
 console.log(2 < 4); // true
