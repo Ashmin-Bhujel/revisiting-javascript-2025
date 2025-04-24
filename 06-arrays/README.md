@@ -126,3 +126,21 @@
   console.log(fruits.indexOf("Apple"));
   // Output: -1
   ```
+
+- `concat()`
+
+  ```js
+  // Combines two or more arrays
+  // Does not changes original array
+  const u1 = ["John", "Jane"];
+  const u2 = ["Dave", "Ellie"];
+  const u3 = u1.concat(u2);
+  console.log(u3);
+  // Output: ["John", "Jane", "Dave", "Ellie"]
+  ```
+
+- We can also use spread operator `...` for combining or copying values but it creates a shallow copy.
+
+  ![shallow copy using spread operator](./shallow-copy.png)
+
+  Notice the value inside `u1` is also changed when value inside `u3` is updated.
