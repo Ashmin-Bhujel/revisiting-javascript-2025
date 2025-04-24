@@ -7,4 +7,6 @@ Just refreshing on JavaScript concepts.
 - [x] Stack and Heap Memory
 - [x] Strings in JavaScript
 - [x] Numbers in JavaScript
-- [ ] Date and Time
+- [x] Date and Time
+- [x] Arrays in JavaScript
+- [ ] Objects in JavaScript
