@@ -41,7 +41,7 @@
   // value for the property `name` i.e. "Jane Stark"
   ```
 
-- **NOTE:** For only copying the value of one non-primitive to another non-primitive variable we can use spread operator `...`
+- **NOTE:** For only copying the value of one non-primitive to another non-primitive variable we can use `structuredClone()` method
 
   ```js
   const user1 = {
@@ -49,7 +49,7 @@
     age: 32,
   };
 
-  const newUser = { ...user1 };
+  const newUser = structuredClone(user1);
   // This copies all the values from `user1`
   // to `newUser` but the memory reference will be different
   ```
