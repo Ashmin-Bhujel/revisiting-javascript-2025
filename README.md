@@ -9,4 +9,5 @@ Just refreshing on JavaScript concepts.
 - [x] Numbers in JavaScript
 - [x] Date and Time
 - [x] Arrays in JavaScript
-- [ ] Objects in JavaScript
+- [x] Objects in JavaScript
+- [ ] Functions in JavaScript
