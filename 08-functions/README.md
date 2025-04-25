@@ -29,7 +29,7 @@ function printAll(...numbers) {
   console.log(`Numbers: ${numbers}`);
 }
 printAll(1, 2, 3, 4, 5);
-// Output: [1, 2, 3, 4, 5]
+// Output: Numbers 1, 2, 3, 4, 5
 ```
 
 ## Arrow Functions
@@ -57,7 +57,7 @@ const add = (x, y) => x + y;
 ```js
 // Using normal function
 (function ConnectToDB(dbName) {
-  console.log(`Connected to ${dnName} database.`);
+  console.log(`Connected to ${dbName} database.`);
 })("users");
 
 // Using arrow function
