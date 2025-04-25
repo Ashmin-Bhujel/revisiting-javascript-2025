@@ -10,4 +10,5 @@ Just refreshing on JavaScript concepts.
 - [x] Date and Time
 - [x] Arrays in JavaScript
 - [x] Objects in JavaScript
-- [ ] Functions in JavaScript
+- [x] Functions in JavaScript
+- [ ] Scopes
