@@ -11,4 +11,5 @@ Just refreshing on JavaScript concepts.
 - [x] Arrays in JavaScript
 - [x] Objects in JavaScript
 - [x] Functions in JavaScript
-- [ ] Scopes
+- [x] Scopes in JavaScript
+- [ ] Inner Workings of JavaScript
