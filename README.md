@@ -12,4 +12,5 @@ Just refreshing on JavaScript concepts.
 - [x] Objects in JavaScript
 - [x] Functions in JavaScript
 - [x] Scopes in JavaScript
-- [ ] Inner Workings of JavaScript
+- [x] Inner Workings of JavaScript
+- [ ] Control Flow in JavaScript
