@@ -15,4 +15,5 @@ Just refreshing on JavaScript concepts.
 - [x] Inner Workings of JavaScript
 - [x] Control Flow in JavaScript
 - [x] Loops in JavaScript
-- [ ] Higher Order Array Loops in JavaScript
+- [x] Higher Order Array Loops in JavaScript
+- [ ] DOM in JavaScript
