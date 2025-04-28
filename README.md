@@ -16,4 +16,5 @@ Just refreshing on JavaScript concepts.
 - [x] Control Flow in JavaScript
 - [x] Loops in JavaScript
 - [x] Higher Order Array Loops in JavaScript
-- [ ] DOM in JavaScript
+- [x] DOM in JavaScript
+- [ ] DOM Projects
