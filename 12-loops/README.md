@@ -82,3 +82,75 @@
   } while (i < 10);
   // The loop run for once and prints the value of `i`
   ```
+
+## Variations of `for` loop
+
+### `for-of` loop
+
+#### Usage and example
+
+- Using with an array
+
+  ```js
+  const fruits = ["Apple", "Mango", "Banana", "Guava"];
+
+  for (const fruit of fruits) {
+    console.log(fruit);
+  }
+  // Here in each iteration the value of `fruit` will be updated from first to last element
+  // Output: Prints each element of the `fruits` array
+  ```
+
+- Using with an object
+
+  - We cannot directly use `for-of` loop with object, we will need to use either `Object.keys()` or `Object.values()` method.
+
+    ```js
+    const languages = {
+      javascript: "js",
+      python: "py",
+      go: "go",
+      "c++": "cpp",
+    };
+
+    for (const x of Object.keys(languages)) {
+      console.log(x);
+    }
+    // Prints all the keys
+
+    for (const x of Object.values(languages)) {
+      console.log(x);
+    }
+    // Prints all the values
+    ```
+
+### `for-in` loop
+
+#### Usage and example
+
+- Using with an array
+
+  ```js
+  const fruits = ["Apple", "Mango", "Banana", "Guava"];
+
+  for (const index in fruits) {
+    console.log(index);
+  }
+  // Output: Prints index of each element i.e. 0, 1, 2, 3
+  ```
+
+- Using with an object
+
+  ```js
+  const languages = {
+    javascript: "js",
+    python: "py",
+    go: "go",
+    "c++": "cpp",
+  };
+
+  for (const key in languages) {
+    console.log(`${key}: ${languages[key]}`);
+  }
+  // Output: 'javascript => js', "python => py", "go => go", "c++ => cpp"
+  ```
