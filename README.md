@@ -18,4 +18,5 @@ Just refreshing on JavaScript concepts.
 - [x] [13 - Higher Order Array Loops in JavaScript](./13-higher-order-array-loops/README.md)
 - [x] [14 - DOM in JavaScript](./14-dom/README.md)
 - [x] [15 - DOM Projects](./15-dom-projects/README.md)
-- [ ] 16 - Events in JavaScript
+- [x] [16 - Events in JavaScript](./16-events/README.md)
+- [ ] 17 - Asynchronous JavaScript
