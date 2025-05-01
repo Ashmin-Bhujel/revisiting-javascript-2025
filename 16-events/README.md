@@ -112,6 +112,34 @@
   });
   ```
 
+## Event Delegation
+
+- Event delegation is a technique that allows you to attach a single event listener to a parent element instead of attaching multiple event listeners to each child element.
+
+- This is useful when you have a large number of child elements and want to improve performance.
+
+- When the event occurs on a child element, the event bubbles up to the parent element, where the event listener is attached.
+
+- You can then use the `event.target` property to determine which child element triggered the event.
+
+  ```html
+  <ul id="list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <script>
+    const list = document.getElementById("list");
+
+    list.addEventListener("click", function (event) {
+      if (event.target.tagName === "LI") {
+        console.log(event.target.textContent);
+      }
+    });
+  </script>
+  ```
+
 ## Some Useful Properties and Methods
 
 - `event.timestamp`: Returns the event's timestamp as the number of milliseconds measured relative to the time origin.
