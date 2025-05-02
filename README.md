@@ -19,4 +19,5 @@ Just refreshing on JavaScript concepts.
 - [x] [14 - DOM in JavaScript](./14-dom/README.md)
 - [x] [15 - DOM Projects](./15-dom-projects/README.md)
 - [x] [16 - Events in JavaScript](./16-events/README.md)
-- [ ] 17 - Asynchronous JavaScript
+- [x] [17 - Asynchronous JavaScript](./17-async/README.md)
+- [ ] 18 - OOP in JavaScript
