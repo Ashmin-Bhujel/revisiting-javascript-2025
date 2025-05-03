@@ -20,4 +20,5 @@ Just refreshing on JavaScript concepts.
 - [x] [15 - DOM Projects](./15-dom-projects/README.md)
 - [x] [16 - Events in JavaScript](./16-events/README.md)
 - [x] [17 - Asynchronous JavaScript](./17-async/README.md)
-- [ ] 18 - OOP in JavaScript
+- [x] [18 - OOP in JavaScript](./18-oop/README.md)
+- [ ] 19 - Call, Bind and Apply
