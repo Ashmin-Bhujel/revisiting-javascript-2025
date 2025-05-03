@@ -14,12 +14,6 @@
 
 - When you access a property or method on an object, JavaScript first checks if the property or method exists on the object itself. If it doesn't, it checks the object's prototype, and so on up the prototype chain until it finds the property or method or reaches the end of the chain (null).
 
-- You can create a new object that inherits from another object using `Object.create()`, which creates a new object with the specified prototype object and properties.
-
-- You can also use the `__proto__` property to access an object's prototype, but this is not recommended as it is not part of the official JavaScript specification and may not work in all environments.
-
-- Instead, you should use `Object.getPrototypeOf()` to get an object's prototype and `Object.setPrototypeOf()` to set an object's prototype.
-
 - You can also use the `instanceof` operator to check if an object is an instance of a particular constructor function or class.
 
   ```js
@@ -57,28 +51,40 @@
 ## Getters and Setters
 
 - Getters and setters are special methods that allow you to define how properties of an object are accessed and modified.
+
 - You can define getters and setters using the `get` and `set` keywords.
+
 - Getters are used to retrieve the value of a property, while setters are used to set the value of a property.
 
   ```js
-  const person = {
-    firstName: "John",
-    lastName: "Doe",
-    get fullName() {
-      return `${this.firstName} ${this.lastName}`;
-    },
-    set fullName(name) {
-      const parts = name.split(" ");
-      this.firstName = parts[0];
-      this.lastName = parts[1];
-    },
-  };
+  class User {
+    constructor(id, name) {
+      this.id = id;
+      this.name = name;
+    }
 
-  console.log(person.fullName); // John Doe
+    get id() {
+      return this._id;
+    }
 
-  person.fullName = "Jane Smith";
-  console.log(person.firstName); // Jane
-  console.log(person.lastName); // Smith
+    set id(id) {
+      this._id = id;
+    }
+
+    get name() {
+      return this._name;
+    }
+
+    set name(name) {
+      this._name = name;
+    }
+  }
+
+  const user1 = new User(1, "Jane Doe");
+  console.log(user1.id); // 1
+  console.log(user1.name); // "Jane Doe";
+  user1.id = 2;
+  console.log(user1.id); // 2
   ```
 
 ## `this` keyword
