@@ -21,4 +21,5 @@ Just refreshing on JavaScript concepts.
 - [x] [16 - Events in JavaScript](./16-events/README.md)
 - [x] [17 - Asynchronous JavaScript](./17-async/README.md)
 - [x] [18 - OOP in JavaScript](./18-oop/README.md)
-- [ ] 19 - Call, Bind and Apply
+- [x] [19 - Call, Bind and Apply](./19-call-bind-apply/README.md)
+- [ ] 20 - Lexical Scope and Closure
