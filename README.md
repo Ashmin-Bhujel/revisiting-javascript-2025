@@ -22,4 +22,4 @@ Just refreshing on JavaScript concepts.
 - [x] [17 - Asynchronous JavaScript](./17-async/README.md)
 - [x] [18 - OOP in JavaScript](./18-oop/README.md)
 - [x] [19 - Call, Bind and Apply](./19-call-bind-apply/README.md)
-- [ ] 20 - Lexical Scope and Closure
+- [x] [20 - Lexical Scope and Closure](./20-lexical-scope-closure/README.md)
